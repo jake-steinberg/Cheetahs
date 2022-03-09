@@ -1,0 +1,138 @@
+body {
+    background-color: #090909;
+    margin:0;   
+    overflow:hidden;
+    font-family:Arial, Helvetica, sans-serif !important;
+}
+/*custom font*/
+@font-face {
+    font-family: 'Calistoga';
+    src: url("data/Calistoga-Regular.ttf") format(ttf);
+}
+/*the title of the interactive*/
+h1 {
+    font-family: Calistoga;
+    font-weight: normal;
+    font-size: 36px;
+}
+/*the info box*/
+#console {
+    position: absolute;
+    z-index: 1;
+    margin: 10px 15px;
+    width: 28%;
+    min-width: 350px;
+    max-width: 600px;
+    border-radius: 5px;
+    overflow: hidden;
+    perspective: 1px;
+    background-color: rgba(255,255,255,0.8);
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    font-size: 12pt;
+  }
+  /*the attribution text*/
+  .credit {
+      font-style: italic;
+      font-size: 14px
+  }
+
+/*the map*/
+#map{
+    /*vw and vh important for making the map fill the screen*/
+    width: 100vw;
+    height: 100vh;
+    display: inline-block;
+    /*z-index important for drawing order, 0 puts map on bottom*/
+    z-index: 0
+    }
+    
+    #panel {  
+        width: 25%;  
+        padding: 20px;  
+        display: inline-block;  
+        vertical-align: top;  
+        text-align: center;  
+        line-height: 42px;  
+    }  
+    
+    .sequence-control-container {  
+        width: 350px;  
+        height: 35px;  
+        background-color: rgba(255,255,255,0.8);  
+        padding: 10px;  
+        line-height: 45px;  
+        text-align: center;  
+        border: solid gray 1px;  
+        margin-right: 15px !important
+    }  
+    
+    .range-slider {  
+        width: 250px;  
+    }  
+    
+    .step {  
+        width: 40px;  
+    }  
+    
+    .step img {  
+        width: 100%;  
+        height: auto;  
+    } 
+
+    .legend-control-container {
+        width: 150px;
+        font-weight: bold;
+        background-color: rgba(255,255,255,0.8);
+        padding: 10px;
+        text-align: center;
+        border: solid gray 1px;
+        margin-right: 15px !important;
+    }
+    
+    .legend-control-container p{
+         margin: 0;
+    }
+
+    .temporalLegend {
+        font-size: 20px;
+    }
+
+    .statusLegend {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    #attribute-legend {
+        margin-top: -25px;
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+    .legend-status {
+        width: 150px;
+        font-weight: bold;
+        background-color: rgba(255,255,255,0.8);
+        padding: 10px;
+        border: solid gray 1px;
+        margin-right: 15px !important;
+    }
+
+    #origin-text {
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+    #dest-text {
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+    #range-text {
+        font-size: 16px;
+        font-weight: normal;
+    }

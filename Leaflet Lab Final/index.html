@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+            <title></title>
+
+        <!--put your external stylesheet links here-->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="lib/leaflet.css">
+        <!--[if IE<9]>
+            <link rel="stylesheet" href="css/style.ie.css">
+        <![endif]-->
+
+         <!--you can also place internal styles here;
+             place these within <style> tags-->
+    </head>
+        
+    <body>
+        <!--put your initial page content here-->
+        <div id="console" class="gray-box">
+            <div class="overlay-content" data-content="home">
+                <div id="home-content" class="content" style="display: block;">
+                    <h1>The Backyard Cheetahs of Arabia</h1>
+                    <img src="img/cheetahs_instagram.png" alt+="Cheetah cubs being advertised for sale on Instagram." style="width:100%;height:100%">
+                    <p>More than 3,600 cheetahs were illegally sold from 2010 through 2019. Smugglers traffic most through the Horn of 
+                        Africa to oil-rich Arabian nations, where cheetahs are commodified as status symbols. Buyers flaunt their animals
+                        on Instagram, where the charismatic cats generate thousands of likes and generate demand for the illegal trade.
+                        The big cats don't breed well in captivity. Nearly all were plucked as cubs from a declining wild population of around 7,000. 
+                        This graphic shows cheetahs whose locations could be verified to the municipal level—only a third of the total.
+                    </p>
+                </div>
+                <p class="credit">Cheetah data from <a type="button" class="link" tabindex="0" href="https://www.sciencedirect.com/science/article/pii/S2352340921001323" target="_blank">
+                    Tricorache et al.</a> Cheetah range from <a class="link" tabindex="0" href="https://www.iucnredlist.org/species/219/50649567" target="_blank"> IUCN</a>. 
+                    Image from <a class="link" tabindex="0" href="https://www.counteringcrime.org/" target="_blank">Alliance to Counter Crime Online</a>.
+                    <br>By: Jake Steinberg, March 2022</p>
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+        <!--put your external script links here-->
+        <script type="text/javascript" src="lib/leaflet-src.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
